@@ -1,17 +1,17 @@
-on: push 
+name: Run Shell Script
+
+on:
+  workflow_dispatch:
 
 jobs:
-  jhb1:
+  echo-hello:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "JHB1"
-  jhb2:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "JHB2"
-  job3:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "JHB3"  
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      
+      - name: Make script executable
+        run: chmod +x print_messages.sh
+
+      - name: Run the script
+        run: ./print_messages.sh
