@@ -1,0 +1,17 @@
+on: push 
+
+jobs:
+  jhb1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "JHB1"
+  jhb2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "JHB2"
+  job3:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "JHB3"  
+
+      
