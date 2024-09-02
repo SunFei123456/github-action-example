@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Make script executable
-        run: chmod +x ./test.sh
+        run: chmod +x test.sh
 
       - name: Run the script
-        run: ./test.sh
+        run: test.sh
