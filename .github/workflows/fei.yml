@@ -7,11 +7,8 @@ jobs:
   echo-hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
       - name: Make script executable
         run: chmod +x print_messages.sh
 
       - name: Run the script
-        run: ./print_messages.sh
+        run: ./test.sh
