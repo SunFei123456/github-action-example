@@ -1,4 +1,4 @@
-name: Run Shell Script
+name: Run Shell Script 🚀
 
 on:
   workflow_dispatch:
@@ -7,11 +7,14 @@ jobs:
   echo-hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout code 📥
         uses: actions/checkout@v2
 
-      - name: Make script executable
+      - name: Make script executable ⚙️
         run: chmod +x ./test.sh
 
-      - name: Run the script
+      - name: Run the script 🏃‍♂️
         run: ./test.sh
+
+      - name: Notify completion 🎉
+        run: echo "Script execution completed successfully! 🎉"
